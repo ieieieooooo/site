@@ -1,0 +1,33 @@
+
+.nav ul {
+  display: flex;
+}
+
+.mobile-menu-button {
+  display: none; 
+}
+
+@media (max-width: 768px) {
+  .nav ul {
+    display: none; 
+  }
+
+  .mobile-menu-button {
+    border-radius: 5px;
+    display: block !important;
+  }
+}
+.nav-link {
+  color: #ffffff; /* Цвет текста */
+  background-color: #007bff; /* Фоновый цвет */
+  padding: 10px; /* Отступы вокруг текста */
+  border-radius: 5px; /* Скругление углов */
+}
+
+.nav-link.login {
+  background-color: #28a745; /* Зеленый фон для кнопки входа */
+}
+
+.nav-link.register {
+  background-color: #dc3545; /* Красный фон для кнопки регистрации */
+}

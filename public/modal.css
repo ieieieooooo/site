@@ -1,0 +1,119 @@
+/* Стили для затемнения фона и отключения прокрутки */
+.modal {
+  display: none; 
+  position: fixed;
+  z-index: 1; 
+  left: 0;
+  top: 0;
+  border-radius: 10px;
+  width: 100%;
+  height: 100%; 
+  overflow: auto;
+  background-color: rgb(0,0,0); 
+  background-color: rgba(0,0,0,0.4); 
+}
+
+/* Стили для самого модального окна */
+.modal-content {
+  border-radius: 10px;
+  background-color: #fefefe;
+  margin: 15% auto; 
+  padding: 20px;
+  border: 1px solid #888;
+  width: 80%; 
+}
+
+
+.close {
+  color: #aaa;
+  float: right;
+  font-size: 28px;
+  font-weight: bold;
+}
+
+.close:hover,
+.close:focus {
+  color: black;
+  text-decoration: none;
+  cursor: pointer;
+}
+
+
+.body-modal-open {
+  overflow: hidden;
+}
+
+#custom-modal {
+  display: none; 
+  position: fixed;
+  z-index: 1000;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(0, 0, 0, 0.9);
+  justify-content: center;
+  align-items: center;
+}
+
+.custom-modal-content {
+  position: absolute;
+  top: 50%; 
+  left: 50%; 
+  transform: translate(-50%, -50%);
+  width: 80%; 
+  max-width: 700px;
+  display: block; 
+  margin: auto;
+}
+
+.custom-close {
+  position: absolute;
+  top: 20px;
+  right: 30px;
+  font-size: 40px;
+  color: #fff;
+  cursor: pointer;
+}
+
+/* Кнопки перелистывания */
+.custom-prev, .custom-next {
+  cursor: pointer;
+  position: fixed;
+  top: 50%;
+  color: #fff;
+  font-size: 30px;
+  user-select: none;
+  padding: 10px;
+  transition: 0.6s ease;
+}
+
+.custom-prev {
+  left: 0;
+}
+
+.custom-next {
+  right: 0;
+}
+
+.custom-prev:hover, .custom-next:hover {
+  background-color: rgba(0, 0, 0, 0.8);
+}
+.gallery {
+  display: flex; /* Делаем галерею flex-контейнером */
+  justify-content: center; /* Выравниваем изображения по центру */
+  align-items: center; /* Выравниваем изображения по вертикали */
+  flex-wrap: nowrap; /* Предотвращаем перенос изображений на новую строку */
+  gap: 10px; /* Добавляем промежуток между изображениями */
+  padding: 10px; /* Добавляем отступ внутри галереи */
+}
+
+.gallery-img {
+  max-height: 100px; /* Ограничиваем высоту изображений */
+  transition: transform 0.2s ease; /* Плавное увеличение */
+}
+
+.gallery-img:hover {
+  transform: scale(1.05); /* Увеличиваем изображение при наведении */
+  cursor: pointer;
+}

@@ -1,0 +1,57 @@
+<%- include('layouts/main.ejs', {
+  pageTitle: 'Университет - Главная',
+  content: `
+  <article>
+    <section class="intro">
+      <h2>Добро пожаловать в Университет!</h2>
+      <p>Здесь Вы найдете самые передовые учебные программы и возможности для Вашего образования.</p>
+    </section>
+    <div class="slider">
+      <div class="slides">
+        <img src="science1.jpg" alt="Image 1">
+        <img src="science2.jpg" alt="Image 2">
+        <img src="science3.jpg" alt="Image 3">
+      </div>
+      <button class="slider-button prev">❮</button> 
+<button class="slider-button next">❯</button> 
+      <div class="counter"></div>
+    </div>
+  
+    <section class="news" >
+      <center> <h2>Новости</h2></center>
+      <article>
+        <div class="news-item">
+          <h3>• Открытие нового факультета</h3>
+          <p>Мы рады сообщить, что открываем новый факультет по компьютерным наукам!</p>
+          <img src="stud3.png" width="470" height="267" class="img" alt="Ура!">
+        </div>
+        <div class="news-item">
+          <h3>• Приемная комиссия</h3>
+          <p>Время делать выбор: приемная кампания стартует 20 июня</p>
+        </div>  
+        <div class="news-item">
+          <h3>• Грант в 1 млн рублей</h3>
+          <p>Молодые ученые могут получить грант в 1 млн рублей на разработки в обасти электроники</p>
+        </div>  
+      </article>
+    </section>
+  </article>
+  <article>
+    <h3>Оставьте отзыв! </h3>
+    <form action="/submit-feedback" method="POST">
+      <label for="name">Имя:</label>
+      <input type="text" id="name" name="name" required>
+      
+      <label for="email">Email:</label>
+      <input type="email" id="email" name="email" required>
+      
+      <label for="message">Отзыв:</label>
+      <textarea id="message" name="message" required></textarea>
+      
+      <button type="submit">Оставить отзыв</button>
+    </form>
+  </article>
+  
+  <button id="scrollToTopButton" title="Наверх">&#9650;</button>
+  `
+}) %>

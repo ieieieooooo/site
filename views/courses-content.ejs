@@ -1,0 +1,21 @@
+<section class="courses">
+  <center> <h2>Учебные программы</h2> </center>
+  <% courses.forEach(course => { %>
+    <div class="course-item">
+      <h3><%= course.title %></h3>
+      <p>Описание: <%= course.description %></p>
+      <p>Срок обучения: <%= course.duration %></p>
+    </div>
+  <% }) %>
+</section>
+<section class = "news"> 
+  <center><button id="myBtn" style="width: 150px; height: 50px; border-radius: 15px; background-color: #d3d5ec;">Наши контакты</button></center>
+
+  <div class="modal" id="myModal">
+    <div class="modal-content">
+      <span class="close">&times;</span>
+      <center><p>Если у вас возникли вопросы, позвоните нам: +79373672121</p></center>
+    </div>
+  </div>
+</section>
+<button id="scrollToTopButton" title="Наверх">&#9650;</button>

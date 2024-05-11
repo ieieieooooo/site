@@ -1,0 +1,17 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta charset="UTF-8">
+  <title>Отзывы</title>
+</head>
+<body>
+  <h1>Отзывы</h1>
+  <% feedbacks.forEach(feedback => { %>
+    <div>
+      <h2><%= feedback.name %></h2>
+      <p><%= feedback.message %></p>
+      <p>Отправлено: <%= feedback.date.toISOString() %></p>
+    </div>
+  <% }) %>
+</body>
+</html>

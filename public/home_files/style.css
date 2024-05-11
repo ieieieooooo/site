@@ -1,0 +1,80 @@
+/* Стили для главной страницы */
+
+/* Установка общего стиля для всего контента */
+body {
+    font-family: Arial, sans-serif;
+    background-color: #999DD2;
+    margin: 0;
+    padding: 0;
+    border-radius: 10px;
+}
+
+/* Стили для шапки сайта */
+header {
+    background-color: #999DD2;
+    color: white;
+    text-align: center;
+    padding: 10px 20px;
+    border-radius: 10px;
+}
+main {
+    padding: 20px;
+    border-radius: 10px;
+}
+/* Стили для основного контейнера */
+.container {
+    width: 80%;
+    margin: 0 auto;
+    background-color: #999DD2;
+    padding: 20px;
+    border-radius: 10px;
+    display: flex;
+}
+img {
+    display: block;
+    margin: 0 auto;
+    border-radius: 20px;
+}
+.block {
+    background-color: #e0e0e0;
+    border-radius: 20px;
+    width: 30%;
+    padding: 20px;
+    margin: 10px;
+    border: 1px solid #000;
+    display: inline-block;
+}
+.intro {
+    background-color: #eeebef;
+    padding: 20px;
+    text-align: center;
+    margin-bottom: 20px;
+    border-radius: 10px;
+}
+.news {
+    background-color: #eeebef;
+    padding: 20px;
+    border-radius: 10px;
+}
+.about {
+    background-color: #eeebef;
+    padding: 20px;
+    border-radius: 10px;
+    text-align: center;
+}
+.about-section {
+    margin-top: 20px;
+    border-radius: 10px;
+    
+}
+.rounded-img {
+    border-radius: 20px;
+}
+/* Стили для футера */
+footer {
+    background-color: #5A5C7B;
+    color: white;
+    text-align: center;
+    padding: 10px;
+    border-radius: 10px;
+}
